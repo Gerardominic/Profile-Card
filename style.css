@@ -10,6 +10,120 @@
     --Dark-gray: hsl(0, 0%, 59%);
 }
 
+/* --------------  Inicia Generales -------------- */
+
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: var(--dark-Cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* --------------  Termina Generales -------------- */
+
+/* --------------  Inicia .card-container -------------- */
+.card-container {
+    margin: 170px auto 50px;
+    width: 330px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* --------------  Inicia bubles -------------- */
+.bubles {
+    background: url(images/bg-pattern-card.svg);
+    height: 140px;
+}
+/* --------------  Termina bubles -------------- */
+
+/* --------------  Inicia .photo -------------- */
+.photo {
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 96px;
+}
+
+/* --------------  Termina .photo -------------- */
+
+/* --------------  Inicia personal-data-container -------------- */
+
+.personal-data-container {
+    background-color: white;
+    height: 150px;
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.name {
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.age, .city {
+    color: var(--Dark-gray);
+}
+
+.city {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+/* --------------  Termina personal-data-container -------------- */
+
+/* --------------  Inicia .stats-container -------------- */
+.stats-container {
+    background-color: white;
+    border-top: 0.5px solid var(--Dark-gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+.statistics {
+    text-align: center;
+}
+
+.quantity {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.units {
+    font-size: 0.6em;
+    color: var(--Dark-gray);
+    letter-spacing: 2px;
+}
+/* --------------  Termina .stats-container -------------- */
+
+/* --------------  Termina .card-container -------------- */
+
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: white; }
+
+/* --------------  Inicia Media Queries -------------- */
+
+@media only screen and (min-width: 1440px) {
+
+    .card-container {
+        width: 350px;
+    }
+
+}
+
+/* --------------  Termina Media Queries -------------- */
